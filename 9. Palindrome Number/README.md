@@ -32,7 +32,8 @@ Given an integer  ``x``, return true if ``x`` is a palindrome, and ``false`` oth
  
 <br>**Follow up:** Could you solve it without converting the integer to a string?
 
-<br>## Solution:
+<br>
+## Solution:
 ```
 class Solution(object):
     def isPalindrome(self, x):
