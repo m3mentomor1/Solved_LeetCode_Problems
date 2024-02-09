@@ -1,7 +1,7 @@
 # 9. Palindrome Number
 
 
-### Problem:
+## Problem:
 Given an integer  ``x``, return true if ``x`` is a palindrome, and ``false`` otherwise.
 
 **Example 1:**
@@ -33,7 +33,7 @@ Given an integer  ``x``, return true if ``x`` is a palindrome, and ``false`` oth
 **Follow up:** Could you solve it without converting the integer to a string?
 
 
-### Solution:
+## Solution:
 
 ```
 class Solution(object):
