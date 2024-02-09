@@ -29,7 +29,7 @@ Example 3:
 
 Constraints:
 
--2^31 <= x <= 2^31 - 1
+``-2<sup>31</sup> <= x <= 2<sup>31</sup> - 1``
  
 
 Follow up: Could you solve it without converting the integer to a string?
