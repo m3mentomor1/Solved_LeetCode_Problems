@@ -33,34 +33,29 @@ At most 104 calls will be made to ping.
 
 ## Solution:
 ```
-class Solution(object):
-    def isPalindrome(self, x):
-        """
-        :type x: int
-        :rtype: bool
-        """
-        # Special cases:
-        # If x is negative or ends with 0 & not 0 itself, it's not a palindrome
-        if x < 0 or (x % 10 == 0 and x != 0):
-            return False
+from collections import deque
+
+class RecentCounter:
+
+    def __init__(self):
+        self.requests = deque()
+
+    def ping(self, t):
+        # Add the current request time to the queue.
+        self.requests.append(t)
         
-        reversed_num = 0
-        original_x = x
+        # Remove requests that fall out of the time frame [t - 3000, t].
+        while self.requests[0] < t - 3000:
+            self.requests.popleft()
         
-        # Reverse half of the number
-        while x > reversed_num:
-            reversed_num = reversed_num * 10 + x % 10
-            x //= 10
-        
-        # If the number of digits in x is odd, we need to divide reversed_num by 10
-        # to eliminate the middle digit
-        return x == reversed_num or x == reversed_num // 10
+        # Return the number of requests within the time frame.
+        return len(self.requests)
 
 # Test cases
-solution = Solution()
-print(solution.isPalindrome(121))  # Output: true
-print(solution.isPalindrome(-121)) # Output: false
-print(solution.isPalindrome(10))   # Output: false
-
+recentCounter = RecentCounter()
+print(recentCounter.ping(1))    # requests = [1], range is [-2999,1], return 1
+print(recentCounter.ping(100))  # requests = [1, 100], range is [-2900,100], return 2
+print(recentCounter.ping(3001)) # requests = [1, 100, 3001], range is [1,3001], return 3
+print(recentCounter.ping(3002)) # requests = [1, 100, 3001, 3002], range is [2,3002], return 3
 ```
 
