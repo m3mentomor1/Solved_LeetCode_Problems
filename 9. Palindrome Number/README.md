@@ -27,9 +27,11 @@ Given an integer  ``x``, return true if ``x`` is a palindrome, and ``false`` oth
 
 > Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
  
+
 **Constraints:**
 -2<sup>31</sup> <= x <= 2<sup>31</sup> - 1
  
+
 **Follow up:** Could you solve it without converting the integer to a string?
 
 
