@@ -1,6 +1,6 @@
 # Solved_LeetCode_Problems
 
-###Easy
+### Easy
 
 [9. Palindrome Number]()
 
