@@ -5,3 +5,7 @@
 [9. Palindrome Number]()
 
 [933. Number of Recent Calls]()
+
+### 🟡 Medium
+
+### 🔴 Hard
