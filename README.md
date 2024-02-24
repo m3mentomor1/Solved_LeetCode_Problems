@@ -2,7 +2,7 @@
 
 ### 🟢 Easy
 
-[9. Palindrome Number]()
+[9. Palindrome Number](https://github.com/m3mentomor1/Solved_LeetCode_Problems/tree/main/9.%20Palindrome%20Number)
 
 [13. Roman to Integer](https://github.com/m3mentomor1/Solved_LeetCode_Problems/tree/main/13.%20Roman%20to%20Integer)
 
