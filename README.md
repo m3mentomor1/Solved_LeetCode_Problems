@@ -10,4 +10,6 @@
 
 ### 🟡 Medium
 
+[2. Add Two Numbers](https://github.com/m3mentomor1/Solved_LeetCode_Problems/tree/main/2.%20Add%20Two%20Numbers)
+
 ### 🔴 Hard
